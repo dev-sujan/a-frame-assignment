@@ -1,5 +1,7 @@
 # Overview
 This project aims to create an immersive virtual reality (VR) experience using A-Frame. The VR scene incorporates a custom JavaScript component for scroll-hold rotation and another component for rotating an object on hover. The scene includes basic shapes from the A-Frame library and 3D models (a house and a parrot) to enhance the user experience.
+![image](https://github.com/dev-sujan/a-frame-assignment/assets/121967553/fc1bb0c0-b468-46ea-a33f-45c3ebe7c377)
+
 
 # [Live](https://dev-sujan.github.io/a-frame-assignment/) 
 ### [https://dev-sujan.github.io/a-frame-assignment/](https://dev-sujan.github.io/a-frame-assignment/)
