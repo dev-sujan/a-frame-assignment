@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <title>Community Components Example</title>
+    <meta name="description" content="Community Components Example" />
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/c-frame/aframe-extras@7.2.0/dist/aframe-extras.min.js"></script>
+
+    <script src="./scroll-hold-rotation.js"></script>
+
+  </head>
+  <body>
+    <a-scene>
+      <a-entity cursor="rayOrigin:mouse"></a-entity>
+
+      <a-sky color="#232323"></a-sky>
+
+      <a-assets>
+        <a-asset-item id="house" src="./models/house.glb"></a-asset-item>
+        <a-asset-item id="parrot" src="./models/Parrot.glb"></a-asset-item>
+      </a-assets>
+
+      <a-gltf-model src="#house" position="0 0 -27"></a-gltf-model>
+
+      <a-gltf-model
+        src="#parrot"
+        position="0 6 -5"
+        animation-mixer
+        scale=".02 .02 .02"
+        rotation="28 -36 0"
+        scroll-hold-rotation
+      ></a-gltf-model>
+
+      <a-entity
+        text="value: Move Mouse By Holding Mid Scroll Button To Rotate The Parrot;"
+        position="0 7 -5"
+        scale="5 5 5"
+      ></a-entity>
+
+      <a-entity cursor="rayOrigin:mouse"></a-entity>
+      <a-camera position="0 4 0"></a-camera>
+    </a-scene>
+  </body>
+</html>
